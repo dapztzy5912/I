@@ -6,7 +6,7 @@ body {
 }
 
 .window {
-  background: #2e2e2e;
+  background: #fff;
   border-radius: 10px;
   width: 90%;
   max-width: 800px;
@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: #fff;
+  background: #1e1e1e;
 }
 
 .dot {
