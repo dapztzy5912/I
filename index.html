@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="toolbar">
+      <span class="btn red"></span>
+      <span class="btn yellow"></span>
+      <span class="btn green"></span>
+      <span class="title">Editor Code</span>
+    </div>
+    <div class="content">
+      <form action="hasil.html" method="GET" onsubmit="return sendData()">
+        <input type="text" id="judul" placeholder="Judul" required>
+        <select id="bahasa">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+        <textarea id="kode" placeholder="Tulis kode di sini..." required></textarea>
+        <button type="submit">Lihat Hasil</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
