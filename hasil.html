@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="highlight/styles/default.min.css">
+  <script src="highlight/highlight.min.js"></script>
+</head>
+<body>
+  <div class="window">
+    <div class="toolbar">
+      <span class="btn red"></span>
+      <span class="btn yellow"></span>
+      <span class="btn green"></span>
+      <span class="title" id="judul"></span>
+    </div>
+    <div class="content">
+      <pre><code id="hasilCode" class="language-html"></code></pre>
+    </div>
+  </div>
+
+  <script>
+    hljs.highlightAll();
+
+    const params = new URLSearchParams(location.search);
+    const judul = params.get('judul');
+    const bahasa = params.get('bahasa');
+    const kode = params.get('kode');
+
+    document.getElementById('judul').innerText = judul;
+    const codeBlock = document.getElementById('hasilCode');
+    codeBlock.className = 'language-' + bahasa;
+    codeBlock.textContent = decodeURIComponent(kode);
+    hljs.highlightElement(codeBlock);
+  </script>
+</body>
+</html>
