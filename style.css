@@ -1,0 +1,61 @@
+body {
+  background: #a0aab5;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.window {
+  width: 80%;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.toolbar {
+  background: #2d2d2d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+.title {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+}
+
+textarea, input, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #4caf50;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
